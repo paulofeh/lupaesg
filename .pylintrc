@@ -1,0 +1,19 @@
+[MASTER]
+ignore=CVS
+persistent=yes
+load-plugins=
+
+[MESSAGES CONTROL]
+disable=C0111,C0103,C0330,R0903,W0621,R0913,R0914,C0413,W0703,R0801
+
+[FORMAT]
+max-line-length=100
+indent-string='    '
+
+[REPORTS]
+output-format=text
+reports=no
+evaluation=10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)
+
+[BASIC]
+good-names=i,j,k,ex,Run,_,id,db
