@@ -1,7 +1,7 @@
 # MongoDB connection configuration will go here
 
 from motor.motor_asyncio import AsyncIOMotorClient
-from app.core.config import settings
+from lupaesg.core.config import settings
 
 class MongoDB:
     client: AsyncIOMotorClient = None

@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.core.config import settings
-from app.core.database import MongoDB
+from lupaesg.core.config import settings
+from lupaesg.core.database import MongoDB
 
 app = FastAPI(
     title="LupaESG API",
