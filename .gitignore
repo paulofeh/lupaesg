@@ -43,3 +43,22 @@ logs
 .env.development.local
 .env.test.local
 .env.production.local
+
+# MongoDB
+data/mongodb/
+
+# Coverage reports
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# MacOS
+.DS_Store
+
+# Cache directories
+.pytest_cache/
+.mypy_cache/

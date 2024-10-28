@@ -24,6 +24,22 @@ pinecone-client = "^5.0.1"
 black = "24.1.1"
 pylint = "3.0.3"
 flake8 = "7.0.0"
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+pytest-asyncio = "^0.23.5"
+ipykernel = "^6.29.0"
+
+[tool.pylint.messages_control]
+disable = [
+    "C0111",  # missing-docstring
+    "C0103",  # invalid-name
+    "C0330",  # bad-continuation
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=lupaesg"
+testpaths = ["tests"]
 
 [tool.black]
 line-length = 100
